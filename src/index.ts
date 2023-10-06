@@ -11,7 +11,7 @@ import {
 import dotenv from 'dotenv';
 dotenv.config();
 
-  const TEST_CHAIN = IncentivizedTestnet(3)
+const TEST_CHAIN = IncentivizedTestnet(3)
 const queryClient = await NibiruQueryClient.connect(TEST_CHAIN.endptTm)
   
 const address = "nibi17qgdh87ln2wf6a6zzae25tkze6yfa2jdsywawn"

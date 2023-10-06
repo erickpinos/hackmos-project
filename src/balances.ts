@@ -16,8 +16,8 @@ const queryClient = await NibiruQueryClient.connect(TEST_CHAIN.endptTm)
 
 const signingClient = await NibiruSigningClient.connect(TEST_CHAIN.endptTm)
 
-const address1 = "nibi17qgdh87ln2wf6a6zzae25tkze6yfa2jdsywawn"
-const address2 = "nibi1alcpzkv88p8ga5n2evvkj3d49nmzpsff4nehfg"
+const address1 = process.env.ADDRESS_1!
+const address2 = process.env.ADDRESS_2!
 
 const allBalances1 = await signingClient.getAllBalances(address1)
 const allBalances2 = await signingClient.getAllBalances(address2)
