@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node --loader ts-node/esm ./src/index.ts",
+    "balances": "node --loader ts-node/esm ./src/balances.ts",
     "build": "tsc"
   },
   "type": "module",
@@ -17,6 +18,7 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "@nibiruchain/nibijs": "^0.21.33"
+    "@nibiruchain/nibijs": "^0.21.33",
+    "dotenv": "^16.3.1"
   }
 }
